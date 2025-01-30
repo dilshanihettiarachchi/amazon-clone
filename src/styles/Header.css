@@ -1,0 +1,145 @@
+.header {
+  align-items: center;
+  background-color: #131921; 
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 0;
+  z-index: 100;
+}
+
+.header .header-delivery-info {
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.header-delivery-info, .header-link {
+  align-items: center;
+  border: 1px solid #131921;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.header-link-cart {
+  align-self: flex-end;
+}
+
+.header-delivery-info:hover, .header-link:hover {
+  border: 1px solid #fff;
+}
+
+.header .header-location-icon {
+  height: 18px;
+  margin-left: 10px;
+  margin-top: 8px;
+  width: 18px;
+}
+
+.header-option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header-option-one {
+  margin-left: 0px;
+}
+
+.header-option-line-one {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-top: 9px;
+}
+
+.header-option-line-two {
+  font-size: 0.87rem;
+  font-weight: 700;
+}
+
+.header-logo {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 18px;
+  object-fit: contain;
+  width: 100px;
+}
+
+.header-search {
+  display: flex;
+  flex: 1;
+  margin: 0 10px;
+  padding-left: 3px;
+  padding-right: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-search-input {
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-size: 0.93rem;
+  font-weight: 500;
+  height: 40px;
+  padding: 10px;
+  width: 100%;
+}
+
+.header-search-button {
+  align-items: center;
+  background-color: #ffbe69;
+  border: none;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 45px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-link {
+  text-decoration: none;
+}
+
+.header-cart {
+  align-items: baseline;
+  display: flex;
+  justify-content: center;
+}
+
+.header-cart-icon-count {
+  align-items: center;
+  display: flex;
+  margin-top: 9px;
+  position: relative;
+}
+
+.header-cart-count {
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffbe69;
+  left: 50%;
+  padding-bottom: 2px;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%); 
+}
+
+.header-cart-text {
+  font-size: 0.87rem;
+  font-weight: 700;
+}
