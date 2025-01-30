@@ -1,0 +1,52 @@
+.image-carousel {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.image-carousel::after {
+  background: linear-gradient(to bottom, #ffffff00, #eaeded); 
+  bottom: 0;
+  content: "";
+  height: 150px; 
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  z-index: 2;
+}
+
+.image-carousel-image {
+  height: 500px; 
+  margin-bottom: -50px;
+  object-fit: cover; 
+  width: 100%;
+  z-index: 1; 
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-carousel-arrow-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  position: absolute;
+  top: 30%;
+  z-index: 3; 
+  transform: translateY(-50%); 
+}
+
+.image-carousel-back-arrow-button {
+  left: 10px;
+}
+
+.image-carousel-forward-arrow-button {
+  right: 10px;
+}
+
+.image-carousel .image-carousel-arrow-icon {
+  font-size: 3rem; 
+}
