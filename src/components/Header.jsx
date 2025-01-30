@@ -2,9 +2,12 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Link } from 'react-router-dom';
+import { useStateValue } from '../StateProvider';
 import '../styles/Header.css';
 
 export default function Header() {
+  const [{ cart }] = useStateValue();
+
   return (
     <header className="header">
       <Link to="/">
@@ -47,7 +50,7 @@ export default function Header() {
         <Link to="/checkout" className="header-link header-link-cart">
           <div className="header-cart">
             <div className="header-cart-icon-count">
-              <span className="header-cart-count">0</span>
+              <span className="header-cart-count">{cart?.length || 0}</span>
               <ShoppingCartOutlinedIcon />
             </div>
             <span className="header-cart-text">Cart</span>
