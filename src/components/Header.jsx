@@ -3,10 +3,21 @@ import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../StateProvider';
+import { useEffect, useState } from 'react';
+import { auth } from '../firebase';
+import { onAuthStateChanged, signOut } from 'firebase/auth';
 import '../styles/Header.css';
 
 export default function Header() {
   const [{ cart }] = useStateValue();
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+    return () => unsubscribe();
+  }, []);
 
   return (
     <header className="header">
@@ -35,12 +46,21 @@ export default function Header() {
         </button>
       </div>
       <div className="header-nav">
-        <Link to="/login" className="header-link">
-          <div className="header-option header-option-two">
-            <span className="header-option-line-one">Hello, username</span>
-            <span className="header-option-line-two">Account</span>
-          </div>
-        </Link>
+        {user ? (
+          <Link to="/" className="header-link">
+            <div className="header-option header-option-two">
+              <span className="header-option-line-one">Hello, {user.displayName}</span>
+              <span className="header-option-line-two" onClick={() => signOut(auth)}>Sign Out</span>
+            </div>
+          </Link>
+        ) : (
+          <Link to="/login" className="header-link">
+            <div className="header-option header-option-two">
+              <span className="header-option-line-one">Hello, Guest</span>
+              <span className="header-option-line-two">Sign In</span>
+            </div>
+          </Link>
+        )}
         <Link to="/" className="header-link">
           <div className="header-option header-option-three">
             <span className="header-option-line-one">Returns</span>

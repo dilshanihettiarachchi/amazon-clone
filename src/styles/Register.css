@@ -1,0 +1,87 @@
+.register {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.register-amazon-logo {
+  margin: 16px;
+  object-fit: contain;
+  width: 100px;
+}
+
+.register-content {
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+  padding: 20px 26px;
+}
+
+.register-content h1 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.register-content label {
+  color: #0f1111;
+  font-size: 0.87rem;
+  font-weight: 700;
+  padding-left: 2px;
+  padding-bottom: 2px;
+}
+
+.register .register-content input {
+  border: none;
+  border: 1px solid #888c8c;
+  border-radius: 4px;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 3px 7px;
+  width: 296px;
+}
+
+.register-content button {
+  background-color: #ffd814;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 30px;
+  margin-top: 6px;
+  margin-bottom: 30px;
+  width: 296px;
+}
+
+.register-content button:hover {
+  background-color: #ffce12;
+}
+
+.register-login-path {
+  margin-top: 30px;
+}
+
+.register-content p {
+  color: #0f1111;
+  font-size: 0.87rem;
+}
+
+.register-login-link {
+  color: #007185;
+  display: inline-block;
+  font-size: 0.87rem;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.register-content span:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+
+
