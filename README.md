@@ -19,7 +19,7 @@
 ## 🚀 Installation and Setup
 1. **Clone the Repository**
 - git clone https://github.com/your-username/amazon-clone.git
-  cd amazon-clone
+- cd amazon-clone
 
 2. **Install Dependencies**
 - npm install
