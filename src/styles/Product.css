@@ -3,18 +3,15 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  margin: 10px;
-  max-height: fit-content;
+  justify-content: flex-start;
+  margin: 8px;
   min-width: 100px;
   overflow: hidden;
   padding: 20px;
-  width: 100%;
   z-index: 1;
 }
 
 .product-info {
-  height: 100px;
   margin-bottom: 15px;
   text-align: left;
 }
@@ -44,10 +41,12 @@
   border: 1px solid #ffd814;
   border-radius: 16px;
   cursor: pointer;
-  margin-top: 12px;
+  justify-self: flex-end;
+  margin-top: auto;
   padding: 8px 14px;
 }
 
 .product button:hover {
   background-color: #ffce12;
 }
+

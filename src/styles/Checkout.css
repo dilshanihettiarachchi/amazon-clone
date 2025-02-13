@@ -39,3 +39,49 @@
   margin-top: 4px;
   text-align: right;
 }
+
+@media only screen and (max-width: 992px) {
+  .checkout {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .checkout-header {
+    display: none;
+  }
+
+  .checkout-left {
+    background-color: #f7f4f4;
+    margin: 8px 16px;
+    order: 2;
+  }
+
+  .checkout-right {
+    order: 1;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .checkout {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .checkout-header {
+    display: none;
+  }
+
+  .checkout-left {
+    background-color: #f7f4f4;
+    margin: 8px 16px;
+    order: 2;
+  }
+
+  .checkout-right {
+    order: 1;
+  }
+}

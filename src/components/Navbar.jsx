@@ -12,7 +12,7 @@ export default function Navbar() {
         <p>Today's Deals</p>
       </div>
       <div className="navbar-navigation-link">
-        <p>customer Service</p>
+        <p>Customer Service</p>
       </div>
       <div className="navbar-navigation-link">
         <p>Registry</p>

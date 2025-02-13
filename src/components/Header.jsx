@@ -6,6 +6,7 @@ import { useStateValue } from '../StateProvider';
 import { useEffect, useState } from 'react';
 import { auth } from '../firebase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
+import MenuIcon from '@mui/icons-material/Menu';
 import '../styles/Header.css';
 
 export default function Header() {
@@ -21,13 +22,18 @@ export default function Header() {
 
   return (
     <header className="header">
-      <Link to="/">
-        <img 
-          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" 
-          alt="Amazon logo" 
-          className="header-logo" 
-        />
-      </Link>
+      <div className="header-left">
+        <button className="header-menu-icon">
+          <MenuIcon />
+        </button>
+        <Link to="/">
+          <img 
+            src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" 
+            alt="Amazon logo" 
+            className="header-logo" 
+          />
+        </Link>
+      </div>
       <div className="header-delivery-info">
         <LocationOnOutlinedIcon className="header-location-icon" />
         <div className="header-option header-option-one">
@@ -47,21 +53,21 @@ export default function Header() {
       </div>
       <div className="header-nav">
         {user ? (
-          <Link to="/" className="header-link">
+          <Link to="/" className="header-link header-link-account">
             <div className="header-option header-option-two">
               <span className="header-option-line-one">Hello, {user.displayName}</span>
               <span className="header-option-line-two" onClick={() => signOut(auth)}>Sign Out</span>
             </div>
           </Link>
         ) : (
-          <Link to="/login" className="header-link">
+          <Link to="/login" className="header-link header-link-account">
             <div className="header-option header-option-two">
               <span className="header-option-line-one">Hello, Guest</span>
               <span className="header-option-line-two">Sign In</span>
             </div>
           </Link>
         )}
-        <Link to="/" className="header-link">
+        <Link to="/" className="header-link header-link-return">
           <div className="header-option header-option-three">
             <span className="header-option-line-one">Returns</span>
             <span className="header-option-line-two">& Orders</span>

@@ -50,3 +50,15 @@
 .image-carousel .image-carousel-arrow-icon {
   font-size: 3rem; 
 }
+
+@media only screen and (max-width: 992px) {
+  .image-carousel-arrow-button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .image-carousel-arrow-button {
+    display: none;
+  }
+}

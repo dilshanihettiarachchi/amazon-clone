@@ -21,7 +21,7 @@ export default function Product({ id, title, price, rating, image }) {
   return (
     <div className="product">
       <div className="product-info">
-        <p className="product-title">{title}</p>
+        <p className="product-title">{title.length <= 100 ? title : `${title.slice(0, 100)}...`}</p>
         <p className="product-price">
           <small>$</small>
           <strong>{price}</strong>
@@ -34,7 +34,7 @@ export default function Product({ id, title, price, rating, image }) {
           }
         </div>
       </div>
-      <img src={image} />
+      <img src={image} alt="Product image"  />
       <button onClick={addToCart}>Add to cart</button>
     </div>
   )

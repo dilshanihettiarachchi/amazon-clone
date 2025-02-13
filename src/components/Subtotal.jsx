@@ -25,7 +25,7 @@ export default function Subtotal() {
         thousandSeparator={true}
         prefix={"$"}
       />
-      <button>Proceed checkout</button>
+      <button>Proceed to checkout</button>
     </div>
   )
 }

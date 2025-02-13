@@ -44,3 +44,49 @@
   padding: 8px 14px;
   width: 100%;
 }
+
+.subtotal button:hover {
+  background-color: #ffce12;
+}
+
+@media only screen and (max-width: 992px) {
+  .subtotal {
+    padding: 20px 16px 0 16px;
+  }
+
+  .subtotal button {
+    border-radius: 30px;
+    font-size: 1rem;
+    height: 40px;
+    margin-top: 18px;
+    order: 1;
+  }
+
+  .subtotal-gift {
+    border-bottom: 1px solid #d3d3d3;
+    margin-top: 24px;
+    order: 2;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .subtotal {
+    padding: 20px 16px 0 16px;
+  }
+
+  .subtotal button {
+    border-radius: 30px;
+    font-size: 1rem;
+    height: 40px;
+    margin-top: 18px;
+    order: 1;
+  }
+
+  .subtotal-gift {
+    border-bottom: 1px solid #d3d3d3;
+    margin-top: 24px;
+    order: 2;
+    padding-bottom: 20px;
+  }
+}
