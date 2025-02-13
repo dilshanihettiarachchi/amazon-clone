@@ -1,8 +1,40 @@
-# React + Vite
+# Amazon Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> An Amazon clone with Firebase authentication
 
-Currently, two official plugins are available:
+## 📌 Features
+- User authentication with Firebase
+- Responsive design with media queries
+- Allow users to add products to the cart and view them on the checkout page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## 🛠️ Tech Stack
+- **Frontend**: React | React Verson: 18.3.1 
+- **Backend**: Firebase | Firebase Version: 11.2.0
+- **Database**: Firestore
+
+---
+
+## 🚀 Installation and Setup
+1. **Clone the Repository**
+- git clone https://github.com/your-username/amazon-clone.git
+  cd amazon-clone
+
+2. **Install Dependencies**
+- npm install
+
+3. **Start the Development Server**
+- npm run dev
+
+---
+
+## 🔥 Deployment
+ **To deploy on Firebase, run**:
+- npm run build
+- firebase deploy
+
+---
+
+## 🚀 Live Demo
+[Live Site] (https://clone-1bf9d.web.app)
